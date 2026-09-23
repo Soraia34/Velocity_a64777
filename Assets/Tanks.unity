@@ -490,6 +490,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1513856803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1513856804}
+  m_Layer: 0
+  m_Name: Turret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1513856804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513856803}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.574, z: 0.848}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1354003426666338539}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2140176373 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2182668876329722018, guid: e57a33c6f3b0e4cb2a2af014c265b239, type: 3}
+  m_PrefabInstance: {fileID: 1354003426666338538}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1354003426666338538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -548,9 +584,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2887154942990734001, guid: e57a33c6f3b0e4cb2a2af014c265b239, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1513856804}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2182668876329722018, guid: e57a33c6f3b0e4cb2a2af014c265b239, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1354003426666338540}
   m_SourcePrefab: {fileID: 100100000, guid: e57a33c6f3b0e4cb2a2af014c265b239, type: 3}
+--- !u!4 &1354003426666338539 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2887154942990734001, guid: e57a33c6f3b0e4cb2a2af014c265b239, type: 3}
+  m_PrefabInstance: {fileID: 1354003426666338538}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1354003426666338540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140176373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a0c8cfae5b131468e0f47951e3311e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireShell
+  bullet: {fileID: 766727927603942410, guid: f74b12fe1d7be764cb4c400fed0fc913, type: 3}
+  turret: {fileID: 1513856803}
 --- !u!1001 &3052892970279238296
 PrefabInstance:
   m_ObjectHideFlags: 0
