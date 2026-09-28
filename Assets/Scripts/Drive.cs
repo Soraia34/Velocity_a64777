@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Drive : MonoBehaviour
 {
-    public float speed = 2.5f;
+    public float speed = 3f;
     public float rotationSpeed = 100.0f;
     public Transform transGun;
     public Transform gun;

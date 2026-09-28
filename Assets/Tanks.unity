@@ -474,15 +474,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 934694217389048696, guid: e57a33c6f3b0e4cb2a2af014c265b239, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.842171e-14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 934694217389048696, guid: e57a33c6f3b0e4cb2a2af014c265b239, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7130017
+      value: 0.548
       objectReference: {fileID: 0}
     - target: {fileID: 934694217389048696, guid: e57a33c6f3b0e4cb2a2af014c265b239, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.5730267
+      value: 0.952
       objectReference: {fileID: 0}
     - target: {fileID: 934694217389048696, guid: e57a33c6f3b0e4cb2a2af014c265b239, type: 3}
       propertyPath: m_LocalRotation.w
@@ -553,6 +553,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 620903246}
     - target: {fileID: 5695994320775494277, guid: e57a33c6f3b0e4cb2a2af014c265b239, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 766727927603942410, guid: ca5e772c0d24f1e4395152fe12061381, type: 3}
+    - target: {fileID: 5695994320775494277, guid: e57a33c6f3b0e4cb2a2af014c265b239, type: 3}
       propertyPath: turretBase
       value: 
       objectReference: {fileID: 1562658703}
@@ -576,6 +580,10 @@ PrefabInstance:
     - target: {fileID: 1578627044859855569, guid: f8df63ccbdfa54d54833de3ea7e2ce5a, type: 3}
       propertyPath: m_Size.z
       value: 1.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804805286109586424, guid: f8df63ccbdfa54d54833de3ea7e2ce5a, type: 3}
+      propertyPath: speed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4044306032032135933, guid: f8df63ccbdfa54d54833de3ea7e2ce5a, type: 3}
       propertyPath: m_LocalPosition.x

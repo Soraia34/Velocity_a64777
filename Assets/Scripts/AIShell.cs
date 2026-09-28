@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class AIShell : MonoBehaviour
 {
-     public GameObject explosion;
-    
+    public GameObject explosion;
+    Rigidbody rb;
 
     void OnCollisionEnter(Collision col)
     {
@@ -18,12 +18,12 @@ public class AIShell : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        rb = this.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        this.transform.forward = rb.linearVelocity;
     }
 }
