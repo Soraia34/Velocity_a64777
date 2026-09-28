@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MoveShell : MonoBehaviour
 {
-    float speed = 1.0f;
+    public float speed = 3.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
