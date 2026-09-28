@@ -5,13 +5,14 @@ public class FireShell : MonoBehaviour
     public GameObject bullet;
     public GameObject turret;
     public GameObject enemy;
+    float rotSpeed = 2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void CreateBullet()
     {
         Instantiate(bullet, turret.transform.position, turret.transform.rotation);
     }
 
-    Vector3 calculateTrajectory()
+    /*Vector3 calculateTrajectory()
     {
         Vector3 p = enemy.transform.position - this.transform.position;
         Vector3 v = enemy.transform.forward * enemy.GetComponent<Drive>().speed;
@@ -50,19 +51,22 @@ public class FireShell : MonoBehaviour
             t = Mathf.Max(new float[] {t1, t2});
         }
         return t * p + v;
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
     {
+        Vector3 diretion = (enemy.transform.position - this.transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(diretion.x, 0, diretion.z));
+        this.transform.rotation = Quaternion.Slerp(this.transform.rotation, lookRotation, Time.deltaTime * rotSpeed);
         if( Input.GetKeyDown(KeyCode.Space))
         {
-            Vector3 aimAt = calculateTrajectory();
-            if (aimAt != Vector3.zero)
-            {
-                this.transform.forward = aimAt;
+            //Vector3 aimAt = calculateTrajectory();
+            //if (aimAt != Vector3.zero)
+            //{
+                //this.transform.forward = aimAt;
                 CreateBullet();
-            }
+            //}
         }
     }
 }
