@@ -455,6 +455,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1562658703 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6880403096463785013, guid: e57a33c6f3b0e4cb2a2af014c265b239, type: 3}
+  m_PrefabInstance: {fileID: 1354003426666338538}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1354003426666338538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -547,6 +552,10 @@ PrefabInstance:
       propertyPath: enemy
       value: 
       objectReference: {fileID: 620903246}
+    - target: {fileID: 5695994320775494277, guid: e57a33c6f3b0e4cb2a2af014c265b239, type: 3}
+      propertyPath: turretBase
+      value: 
+      objectReference: {fileID: 1562658703}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
